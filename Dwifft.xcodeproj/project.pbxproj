@@ -14,6 +14,10 @@
 		041EBBB11B8967C300E113B3 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EBBAE1B8967C300E113B3 /* Dwifft.swift */; };
 		041EBBB21B8967C300E113B3 /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EBBAF1B8967C300E113B3 /* Dwifft+UIKit.swift */; };
 		041EBBB31B8967C300E113B3 /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EBBAF1B8967C300E113B3 /* Dwifft+UIKit.swift */; };
+		3BB89EE91DDB69CE008691EB /* Dwifft_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB89EE71DDB69CE008691EB /* Dwifft_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BB89EED1DDB69FD008691EB /* Dwifft.h in Headers */ = {isa = PBXBuildFile; fileRef = 041EBB971B89679200E113B3 /* Dwifft.h */; };
+		3BB89EEE1DDB69FD008691EB /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EBBAE1B8967C300E113B3 /* Dwifft.swift */; };
+		3BB89EEF1DDB69FD008691EB /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EBBAF1B8967C300E113B3 /* Dwifft+UIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 		041EBBA41B89679200E113B3 /* DwifftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DwifftTests.swift; sourceTree = "<group>"; };
 		041EBBAE1B8967C300E113B3 /* Dwifft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dwifft.swift; sourceTree = "<group>"; };
 		041EBBAF1B8967C300E113B3 /* Dwifft+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dwifft+UIKit.swift"; sourceTree = "<group>"; };
+		3BB89EE51DDB69CE008691EB /* Dwifft_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dwifft_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB89EE71DDB69CE008691EB /* Dwifft_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dwifft_tvOS.h; sourceTree = "<group>"; };
+		3BB89EE81DDB69CE008691EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB89EFE1DDB6F4C008691EB /* Dwifft copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Dwifft copy-Info.plist"; path = "/Users/link/src/Dwifft/Dwifft copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BB89EE11DDB69CE008691EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,7 +76,9 @@
 			children = (
 				041EBB941B89679200E113B3 /* Dwifft */,
 				041EBBA11B89679200E113B3 /* DwifftTests */,
+				3BB89EE61DDB69CE008691EB /* Dwifft_tvOS */,
 				041EBB931B89679200E113B3 /* Products */,
+				3BB89EFE1DDB6F4C008691EB /* Dwifft copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,7 @@
 			children = (
 				041EBB921B89679200E113B3 /* Dwifft.framework */,
 				041EBB9D1B89679200E113B3 /* DwifftTests.xctest */,
+				3BB89EE51DDB69CE008691EB /* Dwifft_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +128,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3BB89EE61DDB69CE008691EB /* Dwifft_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3BB89EE71DDB69CE008691EB /* Dwifft_tvOS.h */,
+				3BB89EE81DDB69CE008691EB /* Info.plist */,
+			);
+			path = Dwifft_tvOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -118,6 +145,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				041EBB981B89679200E113B3 /* Dwifft.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB89EE21DDB69CE008691EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB89EED1DDB69FD008691EB /* Dwifft.h in Headers */,
+				3BB89EE91DDB69CE008691EB /* Dwifft_tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +196,24 @@
 			productReference = 041EBB9D1B89679200E113B3 /* DwifftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3BB89EE41DDB69CE008691EB /* Dwifft_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BB89EEC1DDB69CE008691EB /* Build configuration list for PBXNativeTarget "Dwifft_tvOS" */;
+			buildPhases = (
+				3BB89EE01DDB69CE008691EB /* Sources */,
+				3BB89EE11DDB69CE008691EB /* Frameworks */,
+				3BB89EE21DDB69CE008691EB /* Headers */,
+				3BB89EE31DDB69CE008691EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dwifft_tvOS;
+			productName = Dwifft_tvOS;
+			productReference = 3BB89EE51DDB69CE008691EB /* Dwifft_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +233,10 @@
 						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 0800;
 					};
+					3BB89EE41DDB69CE008691EB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 041EBB8C1B89679200E113B3 /* Build configuration list for PBXProject "Dwifft" */;
@@ -195,6 +253,7 @@
 			targets = (
 				041EBB911B89679200E113B3 /* Dwifft */,
 				041EBB9C1B89679200E113B3 /* DwifftTests */,
+				3BB89EE41DDB69CE008691EB /* Dwifft_tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +267,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		041EBB9B1B89679200E113B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB89EE31DDB69CE008691EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,6 +299,15 @@
 				041EBBB11B8967C300E113B3 /* Dwifft.swift in Sources */,
 				041EBBA51B89679200E113B3 /* DwifftTests.swift in Sources */,
 				041EBBB31B8967C300E113B3 /* Dwifft+UIKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BB89EE01DDB69CE008691EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB89EEF1DDB69FD008691EB /* Dwifft+UIKit.swift in Sources */,
+				3BB89EEE1DDB69FD008691EB /* Dwifft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +482,57 @@
 			};
 			name = Release;
 		};
+		3BB89EEA1DDB69CE008691EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Dwifft_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightsandshapes.Dwifft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		3BB89EEB1DDB69CE008691EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Dwifft_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightsandshapes.Dwifft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -433,6 +559,15 @@
 			buildConfigurations = (
 				041EBBAC1B89679200E113B3 /* Debug */,
 				041EBBAD1B89679200E113B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BB89EEC1DDB69CE008691EB /* Build configuration list for PBXNativeTarget "Dwifft_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BB89EEA1DDB69CE008691EB /* Debug */,
+				3BB89EEB1DDB69CE008691EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

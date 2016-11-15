@@ -70,6 +70,7 @@
 		045502021B898C3200F5614D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		045502181B898C5400F5614D /* Dwifft.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dwifft.xcodeproj; path = ../Dwifft.xcodeproj; sourceTree = "<group>"; };
 		0455022A1B898CF000F5614D /* StuffTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StuffTableViewController.swift; sourceTree = "<group>"; };
+		3BB89EDE1DDB696D008691EB /* DwifftExample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DwifftExample copy-Info.plist"; path = "/Users/link/src/Dwifft/DwifftExample/DwifftExample copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 				045502181B898C5400F5614D /* Dwifft.xcodeproj */,
 				045501F51B898C3200F5614D /* DwifftExample */,
 				045501F41B898C3200F5614D /* Products */,
+				3BB89EDE1DDB696D008691EB /* DwifftExample copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};

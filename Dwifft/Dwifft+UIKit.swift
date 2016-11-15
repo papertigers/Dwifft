@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Places. All rights reserved.
 //
 
-#if os(iOS)
+#if os(iOS) || os(tvOS)
 
 import UIKit
 
